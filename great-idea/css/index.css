@@ -179,23 +179,22 @@ a {
 .section1 {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
 }
 .section1a {
   display: flex;
-  justify-content: ;
+  flex-direction: row;
 }
 .topimage {
   display: flex;
-  justify-content: ;
 }
 .section2 {
   border-bottom: 2px black;
 }
 .section2a {
-  vertical-align: middle;
-  display: inline-block;
+  display: flex;
+  justify-content: 
   font-size: 60px;
-  padding-left: 50px;
 }
 .codeimg {
   vertical-align: middle;
