@@ -154,27 +154,9 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  font-family: "Titillium Web", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-/* Your code starts here! */
 a {
   color: gray;
-  padding: 30px;
+  padding: 40px;
 }
 .section1 {
   display: flex;
@@ -183,68 +165,81 @@ a {
 }
 .section1a {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 .topimage {
-  display: flex;
+  padding: 10px;
 }
 .section2 {
   border-bottom: 2px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
 }
 .section2a {
-  display: flex;
-  justify-content: 
-  font-size: 60px;
+  align-items: center;
+  font-size: 50px;
+  padding-top: 50px;
 }
 .codeimg {
-  vertical-align: middle;
-  display: inline-block;
-  padding-left: 150px;
-  padding-top: 50px;
+  display: flex;
 }
 .section3 {
   /*border: 2px solid red;*/
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .section3a {
-  display: inline-block;
-  margin: 1%;
-  width: 23%;
-  min-width: 150px;
-  vertical-align: middle;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+
   /*border: 2px solid red;*/
 }
 .section3b {
-  display: inline-block;
-  margin: 1%;
-  width: 23%;
-  min-width: 150px;
-  vertical-align: middle;
-  margin-left: 300px;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
   /*border: 2px solid red;*/
 }
-.middle-image {
-  padding-left: 100px;
+.middle-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+h1 {
+  display: flex;
+  justify-content: flex-start;
 }
 .section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
   /*border: 2px solid red;*/
 }
 .section4a {
-  display: inline-block;
-  margin: 1%;
-  width: 23%;
-  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
 }
 .section4b {
-  display: inline-block;
-  margin: 1%;
-  width: 23%;
-  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
 }
 .section4c {
-  display: inline-block;
-  margin: 1%;
-  width: 23%;
-  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
 }
 footer {
   text-align: center;
@@ -254,4 +249,10 @@ footer {
   margin: 0 auto;
   /* padding-left: 300px; */
   text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
 }
