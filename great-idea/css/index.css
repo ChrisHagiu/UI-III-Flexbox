@@ -3,64 +3,256 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+a {
+  color: gray;
+  padding: 40px;
+}
+.section1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.section1a {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.topimage {
+  padding: 10px;
+}
+.section2 {
+  border-bottom: 2px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.section2a {
+  align-items: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+.codeimg {
+  display: flex;
+}
+.section3 {
+  /*border: 2px solid red;*/
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section3a {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+
+  /*border: 2px solid red;*/
+}
+.section3b {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  /*border: 2px solid red;*/
+}
+.middle-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  /*border: 2px solid red;*/
+}
+.section4a {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+.section4b {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+.section4c {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+footer {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.main-content {
+  margin: 0 auto;
+  /* padding-left: 300px; */
+  text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
